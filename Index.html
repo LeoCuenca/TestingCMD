@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi primer pagina web</title>
+</head>
+
+<body>
+        <!--Encabezado donde va el titulo de la Web-->
+        <header>
+            <h1>Mi primera pagina Web</h1>
+        </header>
+        <!--Navegacion de la Web-->
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Segunda Pagina</li>
+                <li>Tercera Pagina</li>
+            </ul>
+        </nav>
+    <h2>Primer titulo</h2>
+    <h3>Subtitulo 1</h3>
+    <p>Lorem ipsum dolor sit amet <strong>consectetur</strong>, adipisicing elit. Pariatur eos quo ab veritatis at velit nulla vel! Cum eserunt, adipisci voluptatem suscipit obcaecati voluptate totam ex quasi. Nam, voluptatibus tenetur?</p>
+
+    <h2>Segundo titulo</h2>
+    <h3>Subtitulo 2</h3>
+    <p>Lorem ipsum dolor sit amet <strong>consectetur</strong> , adipisicing elit. Pariatur eos quo ab veritatis at velit nulla vel! Cum eserunt, adipisci voluptatem suscipit obcaecati voluptate totam ex quasi. Nam, voluptatibus tenetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Voluptas, ducimus rem ullam, laudantium explicabo debitis quis hic eum vel reiciendis blanditiis odit in quia quae, dicta dolorum porro laborum! Aperiam.</p>
+
+    <h2>Tercer titulo</h2>
+    <h3>Subtitulo 3</h3>
+    <p>Lorem ipsum dolor sit amet <strong>consectetur</strong>, adipisicing elit. Pariatur eos quo ab veritatis at velit nulla vel! Cum eserunt, adipisci voluptatem suscipit obcaecati voluptate totam ex quasi. Nam, voluptatibus tenetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Sint esse odio ab praesentium autem iste aperiam, soluta incidunt ipsam amet blanditiis deleniti architecto dolorem corporis deserunt error nostrum repellendus nobis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quos ipsum reprehenderit a amet tempore optio soluta. Ducimus a quis assumenda quo, laudantium quisquam temporibus itaque, officiis maiores consequuntur ab?</p>
+
+    <!--Definde una seccion del sitio-->
+    <section>
+        <h2>Futbol</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias reprehenderit dolore obcaecati nisi, ab dignissimos! Repellat sequi ut, molestias sit vitae ex! Dicta facere nihil excepturi error eos ipsam nemo.</p>
+    </section>
+
+    <!--Contenido independiente del resto-->
+    <article>
+        <h2>Noticias Importantes</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur <cite>Presidente Maduro renuncia</cite> adipisicing elit. Corrupti voluptatem laboriosam odio nisi ipsa possimus? Impedit voluptate provident sit laboriosam, nesciunt accusamus animi inventore magni nostrum, necessitatibus, beatae expedita nam?</p>
+    </article>    
+
+    <!--Lista desordenada-->
+    <ul>   
+        <li>Dato uno</li>
+        <li>Dato dos</li>
+        <li>Dato tres</li>
+        <li>Dato cuatro</li>
+        <li>Dato cinco</li>
+    </ul>
+    <!--Lista ordenada numericamente-->
+    <ol>
+        <li>Dato uno</li>
+        <li>Dato dos</li>
+        <li>Dato tres</li>
+        <li>Dato cuatro</li>
+        <li>Dato cinco</li>
+    </ol>
+
+    <!--Tablas-->
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Celeste</td>
+                <td>Cuenca</td>
+                <td>7 Meses</td>
+                <td>Buenos Aires</td>
+            </tr>
+
+            <tr>
+                <td>Leonel</td>
+                <td>Cuenca</td>
+                <td>31 Años</td>
+                <td>Buenos Aires</td>
+            </tr>
+
+            <tr>
+                <td>Gabriela</td>
+                <td>Cimarosa</td>
+                <td>29 Años</td>
+                <td>Buenos Aires</td>
+            </tr>
+
+            <tr>
+                <td>Guadalupe</td>
+                <td>Velazquez</td>
+                <td>8 Años</td>
+                <td>Buenos Aires</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <br>
+    
+    <form action="archivo.php">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+        <br>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Primer apellido">
+        </div>
+        <br>
+        <div>
+            <label for="telefono">Telefono</label>
+            <input type="number" name="telefono" maxlength="10" id="telefono">
+        </div>
+        <br>
+        <div>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña" minlength="8" maxlength="15">
+        </div>
+        <br>
+        <div>
+            <label for="genero">Genero</label>
+            <br>
+            <input type="radio">Hombre
+            <input type="radio">Mujer
+        </div>
+        <br>
+        <div>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="45" rows="5"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="edad">Edad</label>
+            <!--maxlenght es una propiedad del atributo text, no funciona con el atributo number-->
+            <input type="text" name="edad" id="edad" maxlength="2" value="25">
+        </div>
+        <br>
+        <div>
+            <label for="fecha">Fecha de Nacimiento</label>
+            <input type="date" name="fecha" id="fecha">
+        </div>
+        <br>
+        <div>
+            <label for="materia">Seleccione una materia</label>
+            <select name="materia" id="materia">
+                <option value="Calculo I">Calculo I</option>
+                <option value="Calculo II">Calculo II</option>
+                <option value="Calculo III">Calculo III</option>
+                <option value="Calculo IV">Calculo IV</option>
+            </select>
+
+
+        </div>
+    </form>
+
+    <br>
+
+    <footer>Todos los derechos reservados. Website by Shinkansen</footer>
+
+</body>
+
+</html>
